@@ -1,0 +1,7 @@
+
+function atfillseries() {
+ var sheet =  SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+ var range = sheet.getRange("C1:C2");
+ var destinationrange = sheet.getRange("C1:C17");
+ range.autoFill(destinationrange,SpreadsheetApp.AutoFillSeries.DEFAULT_SERIES); 
+}
